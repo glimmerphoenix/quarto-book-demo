@@ -1,0 +1,29 @@
+project:
+  type: book
+  preview:
+    port: 7878
+    browser: true
+
+book:
+  title: "quarto-book-demo"
+  author: "Jane Doe"
+  date: "2023/06/05"
+  chapters:
+    - index.qmd
+    - intro-python.qmd
+    - intro-r.qmd
+    - codemix.qmd
+    - summary.qmd
+    - references.qmd
+
+bibliography: references.bib
+
+format:
+  html:
+    theme: cosmo
+    code-fold: true
+  pdf:
+    documentclass: scrreprt
+
+jupyter: python3
+
